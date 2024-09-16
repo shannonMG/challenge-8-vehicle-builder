@@ -279,9 +279,9 @@ class Cli {
         // TODO: push the motorbike to the vehicles array
         // TODO: set the selectedVehicleVin to the vin of the motorbike
         // TODO: perform actions on the motorbike
-      
+      }
     
-    }
+    
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
   findVehicleToTow(truck: Truck): void {
