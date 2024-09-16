@@ -173,24 +173,23 @@ class Cli {
         },
       ])
       .then((answers) => {
-        if (answers.vehicleType ==='Truck'){
           const truckWheels = [new Wheel(),new Wheel(),new Wheel(),new Wheel()];
           const truck = new Truck(
             Cli.generateVin(),
-            answers.color, 
-            answers.make,
-            answers.model,
-            parseInt(answers.year),
-            parseInt(answers.weight),
-            parseInt(answers.topSpeed),
-            truckWheels,
-            parseInt(answers.towingCapacity),
+          answers.color, 
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          truckWheels,
+          parseInt(answers.towingCapacity),
           
           );
           this.vehicles.push(truck);
           this.selectedVehicleVin = truck.vin;
           this.performActions();
-        }// TODO: Use the answers object to pass the required properties to the Truck constructor
+        // TODO: Use the answers object to pass the required properties to the Truck constructor
         // TODO: push the truck to the vehicles array
         // TODO: set the selectedVehicleVin to the vin of the truck
         // TODO: perform actions on the truck
